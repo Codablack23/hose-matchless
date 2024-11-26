@@ -1,5 +1,5 @@
 import './App.css'
-import { Nav, Hero, Intro, About, Services, Events, } from './components/index.ts';
+import { Nav, Hero, Intro, About, Services, Events, Team, Contact, } from './components/index.ts';
 
 function App() {
 
@@ -11,9 +11,12 @@ function App() {
       <About />
       <Services />
       <Events />
-      {/* <Team />
+      <Team />
       <Contact />
+      
+      { /* 
       <Footer /> */}
+
     </>
   )
 }
