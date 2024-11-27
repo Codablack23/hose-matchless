@@ -1,7 +1,7 @@
 
 export default function Services() {
   return (
-    <div className="main-container relative py-10 px-5 rounded-xl bg-[#002D62]">
+    <div id="services" className="main-container relative py-10 px-5 rounded-xl bg-[#002D62]">
       <div className="text-[#ffff]">
         <h1 className="md:text-[40px] py-6 text-[32px] font-extrabold">Services</h1>
       </div>

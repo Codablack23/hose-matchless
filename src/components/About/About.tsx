@@ -1,7 +1,7 @@
 
 export default function About() {
   return (
-    <div className="bg-[#FFD700]">
+    <div id="about" className="bg-[#FFD700]">
       <div className="md:mt-96 mt-20 md:mx-[80px] mx-6 py-16">
         <h1 className="md:text-[40px] text-[32px] font-extrabold text-[#002D62]">About Us</h1>
 

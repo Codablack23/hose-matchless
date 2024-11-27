@@ -11,9 +11,9 @@ export default function Intro() {
           <span className="hose-yellow font-bold"> HOSE MATCHLESS GLOBAL LTD</span> is a dynamic enterprise focused on creating opportunities for young talent in the entertainment industry and hosting international events.</p>
          
           <div className="flex flex-row justify-around mt-6">
-            <img className="md:w-[500px] rounded-2xl" src="src/assets/svg/canada.svg" alt="canada"/>
-            <img className="md:w-[500px] rounded-2xl" src="src/assets/svg/uk.svg" alt="uk"/>
-            <img className="md:w-[500px] rounded-2xl" src="src/assets/svg/us.svg" alt="us"/>
+            <img className="md:w-[500px] rounded-2xl" src="/assets/svg/canada.svg" alt="canada"/>
+            <img className="md:w-[500px] rounded-2xl" src="/assets/svg/uk.svg" alt="uk"/>
+            <img className="md:w-[500px] rounded-2xl" src="/assets/svg/us.svg" alt="us"/>
           </div>
         </div>
 
