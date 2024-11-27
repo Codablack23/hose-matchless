@@ -38,7 +38,7 @@ export default function Intro() {
               <p className="mt-6">
               We specialize in discovering and nurturing young talent, organizing international events, managing creator networks, and providing social media management tools to help creators grow and succeed
               </p>
-                <button className="py-3 w-full md:text-[18px] text-[14px] rounded-xl mt-10 font-bold inset-0 bg-[#002D62] text-[#ffff] overlay">Join Our Creator Network</button>  
+                <button className="py-3 w-full md:text-[18px] text-[14px] rounded-xl mt-10 font-bold inset-0 bg-[#002D62] text-[#ffff]">Join Our Creator Network</button>  
               </div>
               
             </div>
@@ -51,7 +51,7 @@ export default function Intro() {
               <p className="mt-6">
               We specialize in discovering and nurturing young talent, organizing international events, managing creator networks, and providing social media management tools to help creators grow and succeed
               </p>
-                <button className="py-3 w-full md:text-[18px] text-[14px] rounded-xl mt-10 font-bold inset-0 bg-[#002D62] text-[#ffff] overlay">Join Our Creator Network</button>  
+                <button className="py-3 w-full md:text-[18px] text-[14px] rounded-xl mt-10 font-bold inset-0 bg-[#002D62] text-[#ffff]">Join Our Creator Network</button>  
               </div>
               
             </div>

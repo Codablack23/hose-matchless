@@ -4,12 +4,7 @@
     
 }
 
-.hose-yellow{
-    color: #FFD700;
-}
-.hose-blue{
-    background-color: #002D62;
-}
+
 
 .logo{
     width: 40px;
@@ -25,63 +20,27 @@
     margin: 80px 80px;
 }
 
-.hero{
-    width: 100%;
-    height: 670px;
-}
 
-.hero2{
-    display: none;
-    width: 100%;
-    height: 670px;
-}
 
-/* .slowFade{
-    display: flex;
-    align-items: flex-start;
-    background: #ffff;
+.slides {
     position: relative;
     overflow: hidden;
-}
-
-.slide img{
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    background: #000;
-    backface-visibility: hidden;
-    opacity: 0;
-    transform: scale(1.5) rotate( 15deg );
-    animation: slowFade 2s infinite;
-}
-
-.slide:nth-child(2) img {
-    animation-delay: 8s;
-}
-
-.slide:nth-child(1) img {
-    animation-delay: 8s;
-}
-
-
-
-.slide {
-    height: 100vh;
-}
-
-@keyframes slowFade {
-    25% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0;
-    }
-} */
+  }
+  
+  .fade {
+    width: 100%; 
+    opacity: 0; 
+    transition: opacity 5s ease-in-out; 
+  }
+  
+  .fade.block {
+    opacity: 1;
+  }
 
 
 .btn1{
+    position: relative;
+    z-index: 2;
     padding: 15px 0;
     min-width: 300px;
     background-color: #002D62;
@@ -90,22 +49,38 @@
     color: #ffff;
     font-weight: 800;
     border-radius: 12px;
-    z-index: 100;
 }
 
-
-
 .btn2{
+    position: relative;
+    z-index: 2;
     padding: 15px 0;
-    width: 300px;
-    background-color: #002D62;
+    min-width: 300px;
+    background-color: #ffff;
+    border: 3px solid #002D62;
     margin-top: 20px;
     font-size: 18px;
-    color: #ffff;
+    color: #002D62;
     font-weight: 800;
     border-radius: 12px;
 }
 
+
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    margin-top: 10px;
+    background-color: #FFD700;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.sticky-btn{
+    bottom: 20px;
+    right: 80px;
+    position: fixed;
+}
 
 
 .fade {
@@ -141,6 +116,12 @@
         -webkit-transition: all ease-in 1s;
         transition: all ease-in 1s;
         transform: translateX(0%);
+    }
+
+    .sticky-btn{
+        bottom: 20px;
+        right: 30px;
+        position: fixed;
     }
     
 

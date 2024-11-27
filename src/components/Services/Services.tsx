@@ -38,7 +38,7 @@ export default function Services() {
               <p>
               Offering creators the resources and guidance to maximize their online presence across social media platforms, ensuring consistent growth and brand development          
               </p>  
-              <button className="py-3 mr-auto md:px-20 px-4 max-sm:w-full md:text-[16px] text-[18px] rounded-xl mt-10 md:font-bold font-medium inset-0 bg-[#002D62] text-[#ffff] overlay">Learn More</button>  
+              <button className="py-3 mr-auto md:px-20 px-4 max-sm:w-full md:text-[16px] text-[18px] rounded-xl mt-10 md:font-bold font-medium inset-0 bg-[#002D62] text-[#ffff]">Learn More</button>  
               </div>
           </div>
 

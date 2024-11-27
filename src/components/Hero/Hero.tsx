@@ -1,5 +1,22 @@
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    "/assets/img/hero-img1.png",
+    "/assets/img/hero-img2.png"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length); 
+    }, 5000); 
+
+    return () => clearInterval(interval); 
+  }, [slides.length]);
+
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -13,23 +30,34 @@ export default function Hero() {
             <span className="font-extrabold">Empowering <br /> Talent</span> and <br />
             <span className="font-extrabold">Innovating<br /> Entertainment<br /> Globally</span>
           </div>
+
           <div className="flex flex-col items-start">
-            <button className="btn1 overlay">Join Our Creator Network</button>
-            <button className="btn2 overlay">Explore Our Services</button>
+            <div className="relative">
+            <button className="btn1">Join Our Creator Network</button>
+              <div className="overlay" ></div>
+            </div>
+
+            <div className="relative">
+            <button className="btn2">Explore Our Services</button>
+              <div className="overlay" ></div>
+            </div>
           </div>
         </div>
 
-        <div className="slides slowFade">
-          <img className="slide" src="/assets/img/hero-img1.png" alt="hero-img" />
-          <img className="hero2" src="/assets/img/hero-img2.png" alt="hero-img" />
+        <div className="slides">
+          <div className={`slide fade ${currentSlide === 0 ? 'block' : 'hidden'}`}>
+            <img src="/assets/img/hero-img1.png" alt="hero-img-1" />
+          </div>
+          <div className={`slide fade ${currentSlide === 1 ? 'block' : 'hidden'}`}>
+            <img src="/assets/img/hero-img2.png" alt="hero-img-2" />
+          </div>
         </div>
 
       </div>
 
       <div 
-        className="md:w-[82px] md:h-[89px] w-[49px] h-[54px] p-3 z-10 md:p-7 rounded-full sticky bg-[#002D62] cursor-pointer"
+        className="sticky-btn md:w-[82px] md:h-[89px] w-[49px] h-[54px] p-3 z-10 md:p-7 rounded-full sticky bg-[#002D62] cursor-pointer"
         onClick={scrollToTop}
-        style={{ bottom: '20px', right: '80px', position: 'fixed' }} // Adjust the position as needed
       >
         <img src="/assets/svg/arrow-up.svg" alt="arrow-right" />
       </div>

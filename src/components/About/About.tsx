@@ -21,7 +21,7 @@ export default function About() {
           </div>
 
           <div className="md:flex md:items-center md:gap-8 max-sm:min-h-96 py-8 px-5 rounded-xl bg-[#002D62] drop-shadow-md">
-              <div className="md:pr-32 px-5 md:py-10 py-4 rounded-xl bg-[#ffff] text-[#002D62] md:text-[20px] text-[22px] font-extrabold ">
+              <div className="md:pr-32 px-5 md:py-10 py-4 rounded-xl bg-[#FFD700] text-[#002D62] md:text-[20px] text-[22px] font-extrabold ">
                 <p> Mission Statement</p>
               </div>
 
@@ -45,7 +45,7 @@ export default function About() {
           </div>
 
           <div className="md:flex md:items-center md:gap-8 max-sm:min-h-96 py-8 px-5 rounded-xl bg-[#002D62] drop-shadow-md">
-              <div className="md:pr-32 px-5 md:py-10 py-4 rounded-xl bg-[#ffff] text-[#002D62] md:text-[20px] text-[22px] font-extrabold ">
+              <div className="md:pr-32 px-5 md:py-14 py-4 rounded-xl bg-[#FFD700] text-[#002D62] md:text-[20px] text-[22px] font-extrabold ">
                 <p>Core Values</p>
               </div>
 
